@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class BonusExercises {
 	public static void main(String[] args) {
 
-		// Exercise 32
+		// Exercise 33
 		Scanner scan = new Scanner(System.in);
 		int[] array1 = new int[5];
 		array1[0] = 2;
@@ -20,19 +20,54 @@ public class BonusExercises {
 		array1[3] = 24;
 		array1[4] = 51;
 		
-		System.out.println("Enter a whole number:");
+		String toContinue = "";
+		String changeNum = "";
+		
+		while (!toContinue.startsWith("n")) {
+		System.out.println("Enter an index of the array:");
 		
 		int userInput = scan.nextInt();
 		
-		int arrayCount = 0;
-		for (int num : array1) {
-			if (num == userInput) {
-				System.out.println("The value " + userInput + " can be found at index " + arrayCount + ".");
-				arrayCount = 0;
-			} else {
-				arrayCount++;
+		if (userInput >= 0 && userInput <= 4) {
+		System.out.println("The value at index " + userInput + " is " + array1[userInput] + ". Would you like to change it? (y/n):");
+			scan.nextLine();
+			changeNum = scan.nextLine().toLowerCase();
+			if (changeNum.startsWith("y")) {
+				System.out.println("Enter the replacement value at index " + userInput + ":");
+				array1[userInput] = scan.nextInt();
+				scan.nextLine();
 			}
+		} else {
+			System.out.println("That is not a valid index.\n");
+			scan.nextLine();
 		}
+
+		System.out.println("Would you like to continue? (y/n):");
+		toContinue = scan.nextLine().toLowerCase();
+		}
+
+		// Exercise 32
+//		Scanner scan = new Scanner(System.in);
+//		int[] array1 = new int[5];
+//		array1[0] = 2;
+//		array1[1] = 8;
+//		array1[2] = 0;
+//		array1[3] = 24;
+//		array1[4] = 51;
+//		
+//		System.out.println("Enter a whole number:");
+//		
+//		int userInput = scan.nextInt();
+//		
+//		int arrayCount = 0;
+//		for (int num : array1) {
+//			if (num == userInput) {
+//				System.out.println("The value " + userInput + " can be found at index " + arrayCount + ".");
+//				arrayCount = 0;
+//			} else {
+//				arrayCount++;
+//			}
+//		}
 		
 		// Exercise 31
 //		int[] array1 = new int[5];
