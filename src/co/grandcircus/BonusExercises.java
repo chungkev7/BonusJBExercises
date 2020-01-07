@@ -374,34 +374,34 @@ public class BonusExercises {
 //		}
 
 		// Exercise 34
-		int[] array1 = new int[5];
-		array1[0] = 16;
-		array1[1] = 32;
-		array1[2] = 64;
-		array1[3] = 128;
-		array1[4] = 256;
-
-		System.out.println("Enter a command (half/double):");
-
-		String userInput = scan.nextLine().toLowerCase();
-
-		if (userInput.startsWith("d")) {
-			for (int i = 0; i < array1.length; i++) {
-				array1[i] *= 2;
-			}
-			System.out.println("The array now contains: ");
-			for (int num : array1) {
-				System.out.println(num);
-			}
-		} else {
-			for (int i = 0; i < array1.length; i++) {
-				array1[i] /= 2;
-			}
-			System.out.println("The array now contains: ");
-			for (int num : array1) {
-				System.out.println(num);
-			}
-		}
+//		int[] array1 = new int[5];
+//		array1[0] = 16;
+//		array1[1] = 32;
+//		array1[2] = 64;
+//		array1[3] = 128;
+//		array1[4] = 256;
+//
+//		System.out.println("Enter a command (half/double):");
+//
+//		String userInput = scan.nextLine().toLowerCase();
+//
+//		if (userInput.startsWith("d")) {
+//			for (int i = 0; i < array1.length; i++) {
+//				array1[i] *= 2;
+//			}
+//			System.out.println("The array now contains: ");
+//			for (int num : array1) {
+//				System.out.println(num);
+//			}
+//		} else {
+//			for (int i = 0; i < array1.length; i++) {
+//				array1[i] /= 2;
+//			}
+//			System.out.println("The array now contains: ");
+//			for (int num : array1) {
+//				System.out.println(num);
+//			}
+//		}
 
 		// Alternate solution to double numbers
 //		int arrayCounter = 0;
@@ -410,6 +410,64 @@ public class BonusExercises {
 //			arrayCounter++;
 //		}
 
+		// Exercise 35
+//		String[] arr1 = new String[5];
+//		arr1[0] = "cow";
+//		arr1[1] = "elephant";
+//		arr1[2] = "jaguar";
+//		arr1[3] = "horse";
+//		arr1[4] = "crow";
+//		
+//		String toContinue = "";
+//		
+//		while (!toContinue.startsWith("n")) {
+//		System.out.println("Enter two indices separated by a space (i.e. 1 2):");
+//		String[] input1 = scan.nextLine().split(" ");
+//		String num1 = input1[0];
+//		String num2 = input1[1];
+//		try {
+//			String animal = arr1[Integer.parseInt(num1)];
+//			char letter = animal.charAt(Integer.parseInt(num2));
+//			System.out.println("The value at index " + num1 + " is " + animal + ". The letter at index " + num2 + " is " + letter + ".");
+//		} catch (NumberFormatException e) {
+//			System.out.println("These are not valid indices.");
+//		} catch (StringIndexOutOfBoundsException e) {
+//			System.out.println("The indices do not exist.");
+//		}
+//		System.out.println("Continue? (y/n):");
+//		toContinue = scan.nextLine().toLowerCase();
+//		}
+		
+		// Exercise 36, only displays part of the song
+		int[] arr1 = new int[5];
+		arr1[0] = 12;
+		arr1[1] = 11;
+		arr1[2] = 10;
+		arr1[3] = 9;
+		arr1[4] = 8;
+		
+		String[] arr2 = new String[5];
+		arr2[0] = "Drummers Drumming";
+		arr2[1] = "Pipers Piping";
+		arr2[2] = "Lords a-Leaping";
+		arr2[3] = "Ladies Dancing";
+		arr2[4] = "Maids a-Milking";
+		
+		String toSing = "";
+		
+		while(!toSing.startsWith("q")) {
+		System.out.println("Enter a command (sing/quit):");
+		toSing = scan.nextLine().toLowerCase();
+		
+		if (toSing.startsWith("s")) {
+			for (int i = 0; i < arr1.length; i++) {
+				System.out.println(arr1[i] + " " + arr2[i]);
+			}
+		}
+		System.out.println("");
+		}
+		
+		
 		scan.close();
 	}
 
