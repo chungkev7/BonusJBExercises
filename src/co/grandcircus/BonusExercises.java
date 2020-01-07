@@ -11,85 +11,8 @@ import java.util.Scanner;
 public class BonusExercises {
 	public static void main(String[] args) {
 
-		// Exercise 33
 		Scanner scan = new Scanner(System.in);
-		int[] array1 = new int[5];
-		array1[0] = 2;
-		array1[1] = 8;
-		array1[2] = 0;
-		array1[3] = 24;
-		array1[4] = 51;
-		
-		String toContinue = "";
-		String changeNum = "";
-		
-		while (!toContinue.startsWith("n")) {
-		System.out.println("Enter an index of the array:");
-		
-		int userInput = scan.nextInt();
-		
-		if (userInput >= 0 && userInput <= 4) {
-		System.out.println("The value at index " + userInput + " is " + array1[userInput] + ". Would you like to change it? (y/n):");
-			scan.nextLine();
-			changeNum = scan.nextLine().toLowerCase();
-			if (changeNum.startsWith("y")) {
-				System.out.println("Enter the replacement value at index " + userInput + ":");
-				array1[userInput] = scan.nextInt();
-				scan.nextLine();
-			}
-		} else {
-			System.out.println("That is not a valid index.\n");
-			scan.nextLine();
-		}
 
-		System.out.println("Would you like to continue? (y/n):");
-		toContinue = scan.nextLine().toLowerCase();
-		}
-
-		// Exercise 32
-//		Scanner scan = new Scanner(System.in);
-//		int[] array1 = new int[5];
-//		array1[0] = 2;
-//		array1[1] = 8;
-//		array1[2] = 0;
-//		array1[3] = 24;
-//		array1[4] = 51;
-//		
-//		System.out.println("Enter a whole number:");
-//		
-//		int userInput = scan.nextInt();
-//		
-//		int arrayCount = 0;
-//		for (int num : array1) {
-//			if (num == userInput) {
-//				System.out.println("The value " + userInput + " can be found at index " + arrayCount + ".");
-//				arrayCount = 0;
-//			} else {
-//				arrayCount++;
-//			}
-//		}
-		
-		// Exercise 31
-//		int[] array1 = new int[5];
-//		array1[0] = 2;
-//		array1[1] = 8;
-//		array1[2] = 0;
-//		array1[3] = 24;
-//		array1[4] = 51;
-//		
-//		Scanner scan = new Scanner(System.in);
-//		
-//		System.out.println("Enter an index of the array:");
-//		
-//		int userInput = scan.nextInt();
-//		
-//		try {
-//			System.out.println("The value at index " + userInput + " is " + array1[userInput]);
-//		} catch (ArrayIndexOutOfBoundsException e) {
-//			System.out.println("That is not a valid index.");
-//		}
-//		
-	
 		// exercise 10
 //		double userInput = scan.nextDouble();
 //		double heightDifference = 54 - userInput;
@@ -313,15 +236,126 @@ public class BonusExercises {
 //		System.out.println(userInput2);
 //		System.out.println(userInput3);
 //		System.out.println(userInput4);
-		
+
 		// exercise 30
 //		System.out.println("Enter some text: ");
 //		StringBuilder reverseString = new StringBuilder(scan.nextLine()).reverse();
 //		System.out.println(reverseString);
 //		
 
+		// Exercise 31
+//		int[] array1 = new int[5];
+//		array1[0] = 2;
+//		array1[1] = 8;
+//		array1[2] = 0;
+//		array1[3] = 24;
+//		array1[4] = 51;
+//		
+//		
+//		System.out.println("Enter an index of the array:");
+//		
+//		int userInput = scan.nextInt();
+//		
+//		try {
+//			System.out.println("The value at index " + userInput + " is " + array1[userInput]);
+//		} catch (ArrayIndexOutOfBoundsException e) {
+//			System.out.println("That is not a valid index.");
+//		}
+
+		// Exercise 32
+//		int[] array1 = new int[5];
+//		array1[0] = 2;
+//		array1[1] = 8;
+//		array1[2] = 0;
+//		array1[3] = 24;
+//		array1[4] = 51;
+//		
+//		System.out.println("Enter a whole number:");
+//		
+//		int userInput = scan.nextInt();
+//		
+//		int arrayCount = 0;
+//		for (int num : array1) {
+//			if (num == userInput) {
+//				System.out.println("The value " + userInput + " can be found at index " + arrayCount + ".");
+//				arrayCount = 0;
+//			} else {
+//				arrayCount++;
+//			}
+//		}
+
+		// Exercise 33
+//		int[] array1 = new int[5];
+//		array1[0] = 2;
+//		array1[1] = 8;
+//		array1[2] = 0;
+//		array1[3] = 24;
+//		array1[4] = 51;
+//		
+//		String toContinue = "";
+//		String changeNum = "";
+//		
+//		while (!toContinue.startsWith("n")) {
+//		System.out.println("Enter an index of the array:");
+//		
+//		int userInput = scan.nextInt();
+//		
+//		if (userInput >= 0 && userInput <= 4) {
+//		System.out.println("The value at index " + userInput + " is " + array1[userInput] + ". Would you like to change it? (y/n):");
+//			scan.nextLine();
+//			changeNum = scan.nextLine().toLowerCase();
+//			if (changeNum.startsWith("y")) {
+//				System.out.println("Enter the replacement value at index " + userInput + ":");
+//				array1[userInput] = scan.nextInt();
+//				scan.nextLine();
+//			}
+//		} else {
+//			System.out.println("That is not a valid index.\n");
+//			scan.nextLine();
+//		}
+//
+//		System.out.println("Would you like to continue? (y/n):");
+//		toContinue = scan.nextLine().toLowerCase();
+//		}
+
+		// Exercise 34
+		int[] array1 = new int[5];
+		array1[0] = 16;
+		array1[1] = 32;
+		array1[2] = 64;
+		array1[3] = 128;
+		array1[4] = 256;
+
+		System.out.println("Enter a command (half/double):");
+
+		String userInput = scan.nextLine().toLowerCase();
+
+		if (userInput.startsWith("d")) {
+			for (int i = 0; i < array1.length; i++) {
+				array1[i] *= 2;
+			}
+			System.out.println("The array now contains: ");
+			for (int num : array1) {
+				System.out.println(num);
+			}
+		} else {
+			for (int i = 0; i < array1.length; i++) {
+				array1[i] /= 2;
+			}
+			System.out.println("The array now contains: ");
+			for (int num : array1) {
+				System.out.println(num);
+			}
+		}
+
+		// Alternate solution to double numbers
+//		int arrayCounter = 0;
+//		for (int num : array1) {
+//			array1[arrayCounter] = num * 2;
+//			arrayCounter++;
+//		}
 
 		scan.close();
 	}
-	
+
 }
