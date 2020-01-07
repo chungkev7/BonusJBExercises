@@ -4,8 +4,6 @@
 
 package co.grandcircus;
 
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Scanner;
 
 public class BonusExercises {
@@ -13,6 +11,63 @@ public class BonusExercises {
 
 		Scanner scan = new Scanner(System.in);
 
+		// Exercise 1
+//		System.out.println("Enter some text:");
+//		String userInput = scan.nextLine();
+//		System.out.println(userInput);
+		
+		// Exercise 2
+//		System.out.println("Enter a number:");
+//		int userInput = scan.nextInt() + 1;
+//		System.out.println(userInput);
+		
+		// Exercise 3
+//		System.out.println("Enter a number:");
+//		double userInput = scan.nextDouble() + .5;
+//		System.out.println(userInput);
+		
+		// Exercise 4
+//		System.out.println("Enter a number:");
+//		double input1 = scan.nextDouble();
+//		System.out.println("Enter another number:");
+//		double input2 = scan.nextDouble();
+//		double sum = input1 + input2;
+//		System.out.println("The sum is " + sum);
+		
+		// Exercise 5
+//		System.out.println("Enter a number:");
+//		double input1 = scan.nextDouble();
+//		System.out.println("Enter another number:");
+//		double input2 = scan.nextDouble();
+//		double product = input1 * input2;
+//		System.out.println("The product is " + product);
+		
+		// Exercise 6
+//		String toContinue = "";
+//		do {
+//		System.out.println("Hello, World!");
+//		System.out.println("Would you like to continue? (y/n):");
+//		toContinue = scan.nextLine().toLowerCase();
+//		} while (!toContinue.startsWith("n"));
+		
+		// Exercise 9
+//		System.out.println("Enter a language:");
+//		String userInput = scan.nextLine();
+//		switch (userInput) {
+//		case "English":
+//			System.out.println("Hello, World!");
+//			break;
+//		case "Spanish":
+//			System.out.println("Hola Mundo!");
+//			break;
+//		case "Dutch":
+//			System.out.println("Hallo wereld!");
+//			break;
+//		default:
+//			System.out.println("Sorry, language not recognized or not in system.");
+//			break;
+//		}
+		
 		// exercise 10
 //		double userInput = scan.nextDouble();
 //		double heightDifference = 54 - userInput;
