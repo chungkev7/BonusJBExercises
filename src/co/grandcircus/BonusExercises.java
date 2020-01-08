@@ -439,34 +439,99 @@ public class BonusExercises {
 //		}
 		
 		// Exercise 36, only displays part of the song
-		int[] arr1 = new int[5];
-		arr1[0] = 12;
-		arr1[1] = 11;
-		arr1[2] = 10;
-		arr1[3] = 9;
-		arr1[4] = 8;
+//		int[] arr1 = new int[5];
+//		arr1[0] = 12;
+//		arr1[1] = 11;
+//		arr1[2] = 10;
+//		arr1[3] = 9;
+//		arr1[4] = 8;
+//		
+//		String[] arr2 = new String[5];
+//		arr2[0] = "Drummers Drumming";
+//		arr2[1] = "Pipers Piping";
+//		arr2[2] = "Lords a-Leaping";
+//		arr2[3] = "Ladies Dancing";
+//		arr2[4] = "Maids a-Milking";
+//		
+//		String toSing = "";
+//		
+//		while(!toSing.startsWith("q")) {
+//		System.out.println("Enter a command (sing/quit):");
+//		toSing = scan.nextLine().toLowerCase();
+//		
+//		if (toSing.startsWith("s")) {
+//			for (int i = 0; i < arr1.length; i++) {
+//				System.out.println(arr1[i] + " " + arr2[i]);
+//			}
+//		}
+//		System.out.println("");
+//		}
 		
-		String[] arr2 = new String[5];
-		arr2[0] = "Drummers Drumming";
-		arr2[1] = "Pipers Piping";
-		arr2[2] = "Lords a-Leaping";
-		arr2[3] = "Ladies Dancing";
-		arr2[4] = "Maids a-Milking";
+		// Exercise 37
+//		int[] arr1 = new int[5];
+//		int counter = 0;
+//		while (counter < 5) {
+//		System.out.println("Enter a number:");
+//		arr1[counter] = scan.nextInt();
+//		counter++;
+//		}
+//		int sum = 0;
+//		for (int num : arr1) {
+//			sum +=num;
+//		}
+//		System.out.println(arr1[0] + " + " + arr1[1] + " + " + arr1[2] + " + " + arr1[3] + " + " + arr1[4] + " = " + sum);
 		
-		String toSing = "";
+		// Exercise 38
+//		int[] arr1 = new int[5];
+//		int counter = 0;
+//		while (counter < 5) {
+//		System.out.println("Enter a number:");
+//		arr1[counter] = scan.nextInt();
+//		counter++;
+//		}
+//		
+//		int sum = 0;
+//		for (int num : arr1) {
+//			sum +=num;
+//		}
+//		
+//		double avg = (double)sum / arr1.length;
+//		
+//		System.out.println("(" + arr1[0] + " + " + arr1[1] + " + " + arr1[2] + " + " + arr1[3] + " + " + arr1[4] + ")" + " / " + arr1.length + " = " + String.format("%.2f", avg));
 		
-		while(!toSing.startsWith("q")) {
-		System.out.println("Enter a command (sing/quit):");
-		toSing = scan.nextLine().toLowerCase();
+		// Exercise 39
+//		int[] arr1 = new int[5];
+//		int counter = 0;
+//		while (counter < 5) {
+//		System.out.println("Enter a number:");
+//		arr1[counter] = scan.nextInt();
+//		counter++;
+//		}
+//		
+//		Arrays.sort(arr1);
+//		
+//		for (int num : arr1) {
+//			System.out.print(num + " ");
+//		}
 		
-		if (toSing.startsWith("s")) {
-			for (int i = 0; i < arr1.length; i++) {
-				System.out.println(arr1[i] + " " + arr2[i]);
-			}
-		}
-		System.out.println("");
-		}
+		// Exercise 40
+//		int[] arr1 = new int[5];
+//		int counter = 0;
+//		while (counter < 5) {
+//		System.out.println("Enter a number:");
+//		arr1[counter] = scan.nextInt();
+//		counter++;
+//		}
+//		Arrays.sort(arr1);
+//		System.out.println("The median of " + Arrays.toString(arr1) + " is " + arr1[2] + ".");
 		
+		// Exercise 41
+		System.out.println("Enter a number:");
+		int num1 = scan.nextInt();
+		System.out.println("Enter another number:");
+		int num2 = scan.nextInt();
+		double avg = (double) num1 / num2;
+		System.out.println(num1 + "/" + num2 + " is approximately " + String.format("%.2f", avg) + ".");
 		
 		scan.close();
 	}
