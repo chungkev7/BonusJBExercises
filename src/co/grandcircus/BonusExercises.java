@@ -12,21 +12,25 @@ public class BonusExercises {
 		Scanner scan = new Scanner(System.in);
 
 		// Exercise 1
+		// Outputs user input back to console
 //		System.out.println("Enter some text:");
 //		String userInput = scan.nextLine();
 //		System.out.println(userInput);
 		
 		// Exercise 2
+		// Outputs user input + 1
 //		System.out.println("Enter a number:");
 //		int userInput = scan.nextInt() + 1;
 //		System.out.println(userInput);
 		
 		// Exercise 3
+		// Outputs user input + .5
 //		System.out.println("Enter a number:");
 //		double userInput = scan.nextDouble() + .5;
 //		System.out.println(userInput);
 		
 		// Exercise 4
+		// Outputs sum of user inputs (2)
 //		System.out.println("Enter a number:");
 //		double input1 = scan.nextDouble();
 //		System.out.println("Enter another number:");
@@ -35,6 +39,7 @@ public class BonusExercises {
 //		System.out.println("The sum is " + sum);
 		
 		// Exercise 5
+		// Outputs product of user inputs (2)
 //		System.out.println("Enter a number:");
 //		double input1 = scan.nextDouble();
 //		System.out.println("Enter another number:");
@@ -43,6 +48,7 @@ public class BonusExercises {
 //		System.out.println("The product is " + product);
 		
 		// Exercise 6
+		// Outputs Hello, World until user selects no
 //		String toContinue = "";
 //		do {
 //		System.out.println("Hello, World!");
@@ -51,6 +57,7 @@ public class BonusExercises {
 //		} while (!toContinue.startsWith("n"));
 		
 		// Exercise 9
+		// Outputs hello, world in difference language based on user input
 //		System.out.println("Enter a language:");
 //		String userInput = scan.nextLine();
 //		switch (userInput) {
@@ -69,6 +76,7 @@ public class BonusExercises {
 //		}
 		
 		// exercise 10
+		// Checks if user is tall enough to ride the Raptor
 //		double userInput = scan.nextDouble();
 //		double heightDifference = 54 - userInput;
 //		
@@ -79,34 +87,40 @@ public class BonusExercises {
 //		}
 
 		// exercise 11
+		// Output all the numbers from 0 to 9
 //		for (int i = 0; i <=9; i ++) {
 //			System.out.print(i +" ");
 //		}
 
 		// exercise 12
+		// Output all the numbers from 9 to 0
 //		for (int i = 9; i >= 0; i--) {
 //		System.out.print(i +" ");
 //	}
 
 		// exercise 13
+		// Output all numbers from user input all the way to 0
 //		int userInput = scan.nextInt();
 //		for (int i = userInput; i >= 0; i--) {
 //		System.out.print(i +" ");
 //	}
 
 		// exercise 14
+		// Output the squares of all the numbers from 1 to user input
 //		int userInput = scan.nextInt();
 //		for (int i = 1 ; i <= userInput; i++) {
 //			System.out.print(i*i + " ");
 //		}
 
 		// exercise 15
+		// Output the cubes of all the numbers from 1 to user input
 //		int userInput = scan.nextInt();
 //		for (int i = 1 ; i <= userInput; i++) {
 //			System.out.print(i*i*i + " ");
 //		}
 
 		// exercise 16
+		// Outputs a triangle of asterisks with a height of ten
 //		String x = " ";
 //		StringBuilder y = new StringBuilder();
 //		for(int i= 1; i<=10; i++)
@@ -121,6 +135,7 @@ public class BonusExercises {
 //		}
 
 		// exercise 18
+		// Calculates the sum of all numbers from 1 to the number entered
 //		int userInput = scan.nextInt();
 //		int sum = 0;
 //		for (int i = 1; i <= userInput; i++) {
@@ -129,6 +144,7 @@ public class BonusExercises {
 //		System.out.println(sum);
 
 		// exercise 19
+		// Calculates the sum of all numbers between userinput1 and userinput2
 //		int userInput1 = scan.nextInt();
 //		int userInput2 = scan.nextInt();
 //		int sum = 0;
@@ -138,6 +154,7 @@ public class BonusExercises {
 //		System.out.println("The sum of all numbers from " + userInput1 + " to " + userInput2 + " is " + sum + ".");
 
 		// exercise 20
+		// Calculates the product of the number and the two preceding numbers
 //		int userInput = scan.nextInt();
 //		int sumDifference = 1;
 //		int difference1 = userInput - 1;
@@ -149,6 +166,7 @@ public class BonusExercises {
 //		System.out.println("The product of " + userInput + ", " + difference1 + ", " + "and " + difference2 + " is " + sumDifference + "." );
 
 		// exercise 21
+		// Prompts user to enter a series of words. Once completed, output a sentence containing all the words
 //		String userInput = "";
 //		String toContinue = "y";
 //		while (toContinue.equals("y")) {
@@ -160,6 +178,7 @@ public class BonusExercises {
 //		System.out.println(userInput);
 
 		// exercise 22
+		// Prompts user for two numbers to determine the range. Prompt user to enter a number to determine if it is in the range
 //		String toContinue = "y";
 //		System.out.println("Enter a number: ");
 //		int userInput1 = scan.nextInt();
@@ -182,11 +201,13 @@ public class BonusExercises {
 //		}
 
 		// exercise 23
+		// Prompt user to enter a string. Extract and output the first ten characters of the string
 //		System.out.println("Enter some text: ");
 //		String userInput = scan.nextLine().substring(0, 10);
 //		System.out.println("The first ten characters were: " + userInput);
 
 		// exercise 24
+		// Prompt user to enter a string. Extract and output the last ten characters of the string
 //		System.out.println("Enter some text: ");
 //		String userInput = scan.nextLine();
 //		String lastTenDigits = "";
@@ -198,6 +219,7 @@ public class BonusExercises {
 //		System.out.println("The last ten characters were: " + lastTenDigits);
 
 		// exercise 25
+		// Splits user input into separate words and display each on its own line
 //		System.out.println("Enter a sentence: ");
 //		String[] userInput = scan.nextLine().split(" ");
 //		for (int i = 0; i < userInput.length; i++) {
@@ -205,6 +227,7 @@ public class BonusExercises {
 //		}
 
 		// exercise 26
+		// Counts how many vowels were in the user input
 //		int vowelCount = 0;
 //		System.out.println("Enter some text: ");
 //		String[] userInput = scan.nextLine().toLowerCase().split("");
@@ -216,6 +239,7 @@ public class BonusExercises {
 //		System.out.println("There were " + vowelCount + " vowels.");
 
 		// exercise 27
+		// Counts how many consonants were in the user input
 //		int consonantCount = 0;
 //		int vowelCount = 0;
 //		System.out.println("Enter some text: ");
@@ -230,6 +254,7 @@ public class BonusExercises {
 //		System.out.println("There were " + consonantCount + " consonants.");
 
 		// exercise 28
+		// Removes all the vowels from userinput and output the text
 //		System.out.println("Enter some text: ");
 //		String userInput = scan.nextLine();
 //		userInput = userInput.replace("a", "").replace("e", "").replace("i", "").replace("o", "").replace("u", "");
@@ -293,12 +318,14 @@ public class BonusExercises {
 //		System.out.println(userInput4);
 
 		// exercise 30
+		// Reverses user input text
 //		System.out.println("Enter some text: ");
 //		StringBuilder reverseString = new StringBuilder(scan.nextLine()).reverse();
 //		System.out.println(reverseString);
 //		
 
 		// Exercise 31
+		// Displays index of user input
 //		int[] array1 = new int[5];
 //		array1[0] = 2;
 //		array1[1] = 8;
@@ -318,6 +345,7 @@ public class BonusExercises {
 //		}
 
 		// Exercise 32
+		// Checks if user input is in array and at which index
 //		int[] array1 = new int[5];
 //		array1[0] = 2;
 //		array1[1] = 8;
@@ -340,6 +368,7 @@ public class BonusExercises {
 //		}
 
 		// Exercise 33
+		// Lets user replace number at user input index of array
 //		int[] array1 = new int[5];
 //		array1[0] = 2;
 //		array1[1] = 8;
@@ -374,6 +403,7 @@ public class BonusExercises {
 //		}
 
 		// Exercise 34
+		// Halfs/doubles the numbers in array based on user input
 //		int[] array1 = new int[5];
 //		array1[0] = 16;
 //		array1[1] = 32;
@@ -411,6 +441,7 @@ public class BonusExercises {
 //		}
 
 		// Exercise 35
+		// Outputs the string at user input index and the letter index
 //		String[] arr1 = new String[5];
 //		arr1[0] = "cow";
 //		arr1[1] = "elephant";
@@ -468,6 +499,7 @@ public class BonusExercises {
 //		}
 		
 		// Exercise 37
+		// Outputs sum of array
 //		int[] arr1 = new int[5];
 //		int counter = 0;
 //		while (counter < 5) {
@@ -482,6 +514,7 @@ public class BonusExercises {
 //		System.out.println(arr1[0] + " + " + arr1[1] + " + " + arr1[2] + " + " + arr1[3] + " + " + arr1[4] + " = " + sum);
 		
 		// Exercise 38
+		// Outputs average of array
 //		int[] arr1 = new int[5];
 //		int counter = 0;
 //		while (counter < 5) {
@@ -500,6 +533,7 @@ public class BonusExercises {
 //		System.out.println("(" + arr1[0] + " + " + arr1[1] + " + " + arr1[2] + " + " + arr1[3] + " + " + arr1[4] + ")" + " / " + arr1.length + " = " + String.format("%.2f", avg));
 		
 		// Exercise 39
+		// Outputs the numbers in array in ascending order
 //		int[] arr1 = new int[5];
 //		int counter = 0;
 //		while (counter < 5) {
@@ -515,6 +549,7 @@ public class BonusExercises {
 //		}
 		
 		// Exercise 40
+		// Outputs the median of the array
 //		int[] arr1 = new int[5];
 //		int counter = 0;
 //		while (counter < 5) {
@@ -526,12 +561,31 @@ public class BonusExercises {
 //		System.out.println("The median of " + Arrays.toString(arr1) + " is " + arr1[2] + ".");
 		
 		// Exercise 41
-		System.out.println("Enter a number:");
-		int num1 = scan.nextInt();
-		System.out.println("Enter another number:");
-		int num2 = scan.nextInt();
-		double avg = (double) num1 / num2;
-		System.out.println(num1 + "/" + num2 + " is approximately " + String.format("%.2f", avg) + ".");
+		// Divides the two user input numbers to 2 decimal places
+//		System.out.println("Enter a number:");
+//		int num1 = scan.nextInt();
+//		System.out.println("Enter another number:");
+//		int num2 = scan.nextInt();
+//		double avg = (double) num1 / num2;
+//		System.out.println(num1 + "/" + num2 + " is approximately " + String.format("%.2f", avg) + ".");
+		
+		// Exercise 42
+		// Created a new point object
+//		System.out.println("Enter an X coordinate (whole number):");
+//		int input1 = scan.nextInt();
+//		System.out.println("Enter a Y coordinate (whole number):");
+//		int input2 = scan.nextInt();
+//		Point p1 = new Point(input1, input2);
+//		System.out.println("You have created a point object " + p1 + ".");
+		
+		// Exercise 43
+		// Calculates the diagonal of the coordinates from the new point object
+		System.out.println("Enter an X coordinate (whole number):");
+		int input1 = scan.nextInt();
+		System.out.println("Enter a Y coordinate (whole number):");
+		int input2 = scan.nextInt();
+		Point p1 = new Point(input1, input2);
+		System.out.println("You have created a point object " + p1 + ". It has a distance of " + p1.calculateDistance(input1, input2) + ".");
 		
 		scan.close();
 	}
