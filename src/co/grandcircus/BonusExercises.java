@@ -588,6 +588,7 @@ public class BonusExercises {
 //		System.out.println("You have created a point object " + p1 + ". It has a distance of " + p1.calculateDistance(input1, input2) + ".");
 		
 		// Exercise 44
+		// Calculates the midpoint between the two coordinates of the point objects
 		System.out.println("Enter an X coordinate (whole number):");
 		int input1 = scan.nextInt();
 		System.out.println("Enter a Y coordinate (whole number):");
