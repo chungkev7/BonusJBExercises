@@ -580,12 +580,26 @@ public class BonusExercises {
 		
 		// Exercise 43
 		// Calculates the diagonal of the coordinates from the new point object
+//		System.out.println("Enter an X coordinate (whole number):");
+//		int input1 = scan.nextInt();
+//		System.out.println("Enter a Y coordinate (whole number):");
+//		int input2 = scan.nextInt();
+//		Point p1 = new Point(input1, input2);
+//		System.out.println("You have created a point object " + p1 + ". It has a distance of " + p1.calculateDistance(input1, input2) + ".");
+		
+		// Exercise 44
 		System.out.println("Enter an X coordinate (whole number):");
 		int input1 = scan.nextInt();
 		System.out.println("Enter a Y coordinate (whole number):");
 		int input2 = scan.nextInt();
 		Point p1 = new Point(input1, input2);
-		System.out.println("You have created a point object " + p1 + ". It has a distance of " + p1.calculateDistance(input1, input2) + ".");
+		System.out.println("Enter an X coordinate (whole number):");
+		int input3 = scan.nextInt();
+		System.out.println("Enter a Y coordinate (whole number):");
+		int input4 = scan.nextInt();
+		Point p2 = new Point(input3, input4);
+		
+		p1.calculateMidpoint(p2.getX(), p2.getY());
 		
 		scan.close();
 	}

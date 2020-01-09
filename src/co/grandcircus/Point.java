@@ -19,6 +19,11 @@ public class Point {
 		return (int) Math.sqrt((Math.pow(x, 2) + Math.pow(y, 2)));
 	}
 	
+	public void calculateMidpoint(int a, int b) {
+		System.out.println("The midpoint between (" + this.x + "," + this.y + ") and (" + a + "," + b + ") is " +
+				"(" + (this.x + a) / 2 + "," + (this.y + b) / 2 + ").");
+	}
+	
 	public int getX() {
 		return x;
 	}
