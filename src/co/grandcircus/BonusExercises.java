@@ -589,18 +589,24 @@ public class BonusExercises {
 		
 		// Exercise 44
 		// Calculates the midpoint between the two coordinates of the point objects
-		System.out.println("Enter an X coordinate (whole number):");
-		int input1 = scan.nextInt();
-		System.out.println("Enter a Y coordinate (whole number):");
-		int input2 = scan.nextInt();
-		Point p1 = new Point(input1, input2);
-		System.out.println("Enter an X coordinate (whole number):");
-		int input3 = scan.nextInt();
-		System.out.println("Enter a Y coordinate (whole number):");
-		int input4 = scan.nextInt();
-		Point p2 = new Point(input3, input4);
+//		System.out.println("Enter an X coordinate (whole number):");
+//		int input1 = scan.nextInt();
+//		System.out.println("Enter a Y coordinate (whole number):");
+//		int input2 = scan.nextInt();
+//		Point p1 = new Point(input1, input2);
+//		System.out.println("Enter an X coordinate (whole number):");
+//		int input3 = scan.nextInt();
+//		System.out.println("Enter a Y coordinate (whole number):");
+//		int input4 = scan.nextInt();
+//		Point p2 = new Point(input3, input4);
+//		
+//		p1.calculateMidpoint(p2.getX(), p2.getY());
 		
-		p1.calculateMidpoint(p2.getX(), p2.getY());
+		// Exercise 45
+		// Calculates area and perimeter of a square
+		System.out.println("Enter a side length:");
+		Square s1 = new Square(scan.nextInt());
+		System.out.println("The square has side length " + s1.getSideLength() + ". Its area is " + s1.calculateArea() + " and its perimeter is " + s1.calculatePerimeter() + ".");
 		
 		scan.close();
 	}
