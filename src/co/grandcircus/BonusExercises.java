@@ -5,9 +5,6 @@
 package co.grandcircus;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class BonusExercises {
@@ -677,7 +674,7 @@ public class BonusExercises {
 		double squareArea = 0;
 		double squarePerimeter = 0;
 		int largestSide = 0;
-		int smallestSide = 0;
+		int smallestSide = 10000000;
 		
 		while (!toContinue.equals("n")) {
 			System.out.println("Enter a side length (q to quit):");
@@ -689,28 +686,26 @@ public class BonusExercises {
 				squareList.add(new Square(Integer.parseInt(input)));
 			}
 		} catch (NumberFormatException e) {
-			System.out.println("Please enter a whole number for side lengths.\n");
+			System.out.println("Please enter a whole number for side lengths for 'q' to quit.\n");
 		}
 		}
-		
-		int squareCounter = 0;
 		
 		for (Square sq : squareList) {
 			squareArea += sq.calculateArea();
 			squarePerimeter += sq.calculatePerimeter();
-			if (squareList.get(squareCounter).getSideLength() > squareList.get(squareList.size() - 1).getSideLength()) {
-				largestSide = squareList.get(squareCounter).getSideLength();
+			if (sq.getSideLength() > largestSide) {
+				largestSide = sq.getSideLength();
 			}
-			if (squareList.get(squareCounter).getSideLength() < squareList.get(squareList.size() - 1).getSideLength()) {
-				smallestSide = squareList.get(squareCounter).getSideLength();
+			if (sq.getSideLength() < smallestSide) {
+				smallestSide = sq.getSideLength();
 			}
 		}
 		
 		System.out.println("You have created " + squareList.size() + " square(s).");
 		System.out.println("Largest: " + largestSide);
 		System.out.println("Smallest: " + smallestSide);
-		System.out.println("Average area: " + (squareArea / squareList.size()));
-		System.out.println("Average perimeter: " + (squarePerimeter / squareList.size()));
+		System.out.println("Average area: " + String.format("%.2f", squareArea / squareList.size()));
+		System.out.println("Average perimeter: " + String.format("%.2f", squarePerimeter / squareList.size()));
 		
 		scan.close();
 	}
