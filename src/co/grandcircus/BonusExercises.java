@@ -4,6 +4,10 @@
 
 package co.grandcircus;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class BonusExercises {
@@ -16,19 +20,19 @@ public class BonusExercises {
 //		System.out.println("Enter some text:");
 //		String userInput = scan.nextLine();
 //		System.out.println(userInput);
-		
+
 		// Exercise 2
 		// Outputs user input + 1
 //		System.out.println("Enter a number:");
 //		int userInput = scan.nextInt() + 1;
 //		System.out.println(userInput);
-		
+
 		// Exercise 3
 		// Outputs user input + .5
 //		System.out.println("Enter a number:");
 //		double userInput = scan.nextDouble() + .5;
 //		System.out.println(userInput);
-		
+
 		// Exercise 4
 		// Outputs sum of user inputs (2)
 //		System.out.println("Enter a number:");
@@ -37,7 +41,7 @@ public class BonusExercises {
 //		double input2 = scan.nextDouble();
 //		double sum = input1 + input2;
 //		System.out.println("The sum is " + sum);
-		
+
 		// Exercise 5
 		// Outputs product of user inputs (2)
 //		System.out.println("Enter a number:");
@@ -46,7 +50,7 @@ public class BonusExercises {
 //		double input2 = scan.nextDouble();
 //		double product = input1 * input2;
 //		System.out.println("The product is " + product);
-		
+
 		// Exercise 6
 		// Outputs Hello, World until user selects no
 //		String toContinue = "";
@@ -55,7 +59,7 @@ public class BonusExercises {
 //		System.out.println("Would you like to continue? (y/n):");
 //		toContinue = scan.nextLine().toLowerCase();
 //		} while (!toContinue.startsWith("n"));
-		
+
 		// Exercise 9
 		// Outputs hello, world in difference language based on user input
 //		System.out.println("Enter a language:");
@@ -74,7 +78,7 @@ public class BonusExercises {
 //			System.out.println("Sorry, language not recognized or not in system.");
 //			break;
 //		}
-		
+
 		// exercise 10
 		// Checks if user is tall enough to ride the Raptor
 //		double userInput = scan.nextDouble();
@@ -166,7 +170,8 @@ public class BonusExercises {
 //		System.out.println("The product of " + userInput + ", " + difference1 + ", " + "and " + difference2 + " is " + sumDifference + "." );
 
 		// exercise 21
-		// Prompts user to enter a series of words. Once completed, output a sentence containing all the words
+		// Prompts user to enter a series of words. Once completed, output a sentence
+		// containing all the words
 //		String userInput = "";
 //		String toContinue = "y";
 //		while (toContinue.equals("y")) {
@@ -178,7 +183,8 @@ public class BonusExercises {
 //		System.out.println(userInput);
 
 		// exercise 22
-		// Prompts user for two numbers to determine the range. Prompt user to enter a number to determine if it is in the range
+		// Prompts user for two numbers to determine the range. Prompt user to enter a
+		// number to determine if it is in the range
 //		String toContinue = "y";
 //		System.out.println("Enter a number: ");
 //		int userInput1 = scan.nextInt();
@@ -201,13 +207,15 @@ public class BonusExercises {
 //		}
 
 		// exercise 23
-		// Prompt user to enter a string. Extract and output the first ten characters of the string
+		// Prompt user to enter a string. Extract and output the first ten characters of
+		// the string
 //		System.out.println("Enter some text: ");
 //		String userInput = scan.nextLine().substring(0, 10);
 //		System.out.println("The first ten characters were: " + userInput);
 
 		// exercise 24
-		// Prompt user to enter a string. Extract and output the last ten characters of the string
+		// Prompt user to enter a string. Extract and output the last ten characters of
+		// the string
 //		System.out.println("Enter some text: ");
 //		String userInput = scan.nextLine();
 //		String lastTenDigits = "";
@@ -468,7 +476,7 @@ public class BonusExercises {
 //		System.out.println("Continue? (y/n):");
 //		toContinue = scan.nextLine().toLowerCase();
 //		}
-		
+
 		// Exercise 36, only displays part of the song
 //		int[] arr1 = new int[5];
 //		arr1[0] = 12;
@@ -497,7 +505,7 @@ public class BonusExercises {
 //		}
 //		System.out.println("");
 //		}
-		
+
 		// Exercise 37
 		// Outputs sum of array
 //		int[] arr1 = new int[5];
@@ -512,7 +520,7 @@ public class BonusExercises {
 //			sum +=num;
 //		}
 //		System.out.println(arr1[0] + " + " + arr1[1] + " + " + arr1[2] + " + " + arr1[3] + " + " + arr1[4] + " = " + sum);
-		
+
 		// Exercise 38
 		// Outputs average of array
 //		int[] arr1 = new int[5];
@@ -531,7 +539,7 @@ public class BonusExercises {
 //		double avg = (double)sum / arr1.length;
 //		
 //		System.out.println("(" + arr1[0] + " + " + arr1[1] + " + " + arr1[2] + " + " + arr1[3] + " + " + arr1[4] + ")" + " / " + arr1.length + " = " + String.format("%.2f", avg));
-		
+
 		// Exercise 39
 		// Outputs the numbers in array in ascending order
 //		int[] arr1 = new int[5];
@@ -547,7 +555,7 @@ public class BonusExercises {
 //		for (int num : arr1) {
 //			System.out.print(num + " ");
 //		}
-		
+
 		// Exercise 40
 		// Outputs the median of the array
 //		int[] arr1 = new int[5];
@@ -559,7 +567,7 @@ public class BonusExercises {
 //		}
 //		Arrays.sort(arr1);
 //		System.out.println("The median of " + Arrays.toString(arr1) + " is " + arr1[2] + ".");
-		
+
 		// Exercise 41
 		// Divides the two user input numbers to 2 decimal places
 //		System.out.println("Enter a number:");
@@ -568,7 +576,7 @@ public class BonusExercises {
 //		int num2 = scan.nextInt();
 //		double avg = (double) num1 / num2;
 //		System.out.println(num1 + "/" + num2 + " is approximately " + String.format("%.2f", avg) + ".");
-		
+
 		// Exercise 42
 		// Created a new point object
 //		System.out.println("Enter an X coordinate (whole number):");
@@ -577,7 +585,7 @@ public class BonusExercises {
 //		int input2 = scan.nextInt();
 //		Point p1 = new Point(input1, input2);
 //		System.out.println("You have created a point object " + p1 + ".");
-		
+
 		// Exercise 43
 		// Calculates the diagonal of the coordinates from the new point object
 //		System.out.println("Enter an X coordinate (whole number):");
@@ -586,7 +594,7 @@ public class BonusExercises {
 //		int input2 = scan.nextInt();
 //		Point p1 = new Point(input1, input2);
 //		System.out.println("You have created a point object " + p1 + ". It has a distance of " + p1.calculateDistance(input1, input2) + ".");
-		
+
 		// Exercise 44
 		// Calculates the midpoint between the two coordinates of the point objects
 //		System.out.println("Enter an X coordinate (whole number):");
@@ -601,12 +609,108 @@ public class BonusExercises {
 //		Point p2 = new Point(input3, input4);
 //		
 //		p1.calculateMidpoint(p2.getX(), p2.getY());
-		
+
 		// Exercise 45
 		// Calculates area and perimeter of a square
-		System.out.println("Enter a side length:");
-		Square s1 = new Square(scan.nextInt());
-		System.out.println("The square has side length " + s1.getSideLength() + ". Its area is " + s1.calculateArea() + " and its perimeter is " + s1.calculatePerimeter() + ".");
+//		System.out.println("Enter a side length:");
+//		Square s1 = new Square(scan.nextInt());
+//		System.out.println("The square has side length " + s1.getSideLength() + ". Its area is " + s1.calculateArea() + " and its perimeter is " + s1.calculatePerimeter() + ".");
+
+		// Exercise 46
+		// Calculates area and perimeter of a triangle
+//		System.out.println("Enter the side lengths of a triangle, separated by a space (i.e. 1 2 3):");
+//		String[] input = scan.nextLine().split(" ");
+//		int side1Length = Integer.parseInt(input[0]);
+//		int side2Length = Integer.parseInt(input[1]);
+//		int side3Length = Integer.parseInt(input[2]);
+//		Triangle tri1 = new Triangle(side1Length, side2Length, side3Length);
+//		System.out.println("The triangle has side lengths " + side1Length + ", " + side2Length + ", and "
+//				+ side3Length + ". Its area is " + tri1.calculateArea() + " and its perimeter is " + tri1.calculatePerimeter() + ".");
+
+		// Exercise 47
+		// Prompt user to enter a string, stores string in a list. Displays contents
+		// separated by a space
+//		StringBuilder string1 = new StringBuilder();
+//		String toContinue = "";
+//		
+//		while (!toContinue.startsWith("n")) {
+//		System.out.println("Enter some text:");
+//		string1.append(scan.nextLine() + " ");
+//		System.out.println("You have entered: " + string1);
+//		System.out.println("Would you like to continue? (y/n)");
+//		toContinue = scan.nextLine().toLowerCase();
+//		}
+
+		// Exercise 48
+		// Prompt user to enter as many numbers, stores numbers in a list. Outputs the
+		// sum of the numbers after user quits
+//		String input = "";
+//		String toContinue = "";
+//		ArrayList<Double> list1 = new ArrayList<>();
+//		double listSum = 0;
+//
+//		while (!toContinue.equals("n")) {
+//			System.out.println("Enter a number (q to quit):");
+//			try {
+//				input = scan.nextLine();
+//				if (input.equals("q")) {
+//					toContinue = "n";
+//				} else {
+//					list1.add(Double.parseDouble(input));
+//				}
+//			} catch (NumberFormatException e) {
+//				System.out.println("Please enter a number or q to quit.");
+//			}
+//		}
+//
+//		for (Double num : list1) {
+//			listSum += num;
+//		}
+//		
+//		System.out.println("The sum of " + list1.toString() + " = " + listSum);
+
+		// Exercise 49
+		// Creates a list of squares, displays statistics for the list
+		String input = "";
+		String toContinue = "";
+		ArrayList<Square> squareList = new ArrayList<>();
+		double squareArea = 0;
+		double squarePerimeter = 0;
+		int largestSide = 0;
+		int smallestSide = 0;
+		
+		while (!toContinue.equals("n")) {
+			System.out.println("Enter a side length (q to quit):");
+		try {
+			input = scan.nextLine();
+			if (input.equals("q")) {
+				toContinue = "n";
+			} else {
+				squareList.add(new Square(Integer.parseInt(input)));
+			}
+		} catch (NumberFormatException e) {
+			System.out.println("Please enter a whole number for side lengths.\n");
+		}
+		}
+		
+		int squareCounter = 0;
+		
+		for (Square sq : squareList) {
+			squareArea += sq.calculateArea();
+			squarePerimeter += sq.calculatePerimeter();
+			if (squareList.get(squareCounter).getSideLength() > squareList.get(squareList.size() - 1).getSideLength()) {
+				largestSide = squareList.get(squareCounter).getSideLength();
+			}
+			if (squareList.get(squareCounter).getSideLength() < squareList.get(squareList.size() - 1).getSideLength()) {
+				smallestSide = squareList.get(squareCounter).getSideLength();
+			}
+		}
+		
+		System.out.println("You have created " + squareList.size() + " square(s).");
+		System.out.println("Largest: " + largestSide);
+		System.out.println("Smallest: " + smallestSide);
+		System.out.println("Average area: " + (squareArea / squareList.size()));
+		System.out.println("Average perimeter: " + (squarePerimeter / squareList.size()));
 		
 		scan.close();
 	}
