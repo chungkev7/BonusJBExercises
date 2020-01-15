@@ -668,44 +668,80 @@ public class BonusExercises {
 
 		// Exercise 49
 		// Creates a list of squares, displays statistics for the list
-		String input = "";
+//		String input = "";
+//		String toContinue = "";
+//		ArrayList<Square> squareList = new ArrayList<>();
+//		double totalSquareArea = 0;
+//		double totalSquarePerimeter = 0;
+//		int largestSide = 0;
+//		int smallestSide = 10000000;
+//		
+//		while (!toContinue.equals("n")) {
+//			System.out.println("Enter a side length (q to quit):");
+//		try {
+//			input = scan.nextLine();
+//			if (input.equals("q")) {
+//				toContinue = "n";
+//			} else {
+//				squareList.add(new Square(Integer.parseInt(input)));
+//			}
+//		} catch (NumberFormatException e) {
+//			System.out.println("Please enter a whole number for side lengths for 'q' to quit.\n");
+//		}
+//		}
+//		
+//		for (Square sq : squareList) {
+//			totalSquareArea += sq.calculateArea();
+//			totalSquarePerimeter += sq.calculatePerimeter();
+//			if (sq.getSideLength() > largestSide) {
+//				largestSide = sq.getSideLength();
+//			}
+//			if (sq.getSideLength() < smallestSide) {
+//				smallestSide = sq.getSideLength();
+//			}
+//		}
+//		
+//		System.out.println("You have created " + squareList.size() + " square(s).");
+//		System.out.println("Largest: " + largestSide);
+//		System.out.println("Smallest: " + smallestSide);
+//		System.out.println("Average area: " + String.format("%.2f", totalSquareArea / squareList.size()));
+//		System.out.println("Average perimeter: " + String.format("%.2f", totalSquarePerimeter / squareList.size()));
+//		
+
+		// Exercise 50
+		// Create a list of triangles, displays statistics for the list
+		ArrayList<Triangle> triangleList = new ArrayList<>();
 		String toContinue = "";
-		ArrayList<Square> squareList = new ArrayList<>();
-		double squareArea = 0;
-		double squarePerimeter = 0;
-		int largestSide = 0;
-		int smallestSide = 10000000;
+		String input = "";
+		String[] sideLengths = new String[3];
+		double totalTriangleArea = 0;
+		double totalTrianglePerimeter = 0;
 		
 		while (!toContinue.equals("n")) {
-			System.out.println("Enter a side length (q to quit):");
+		System.out.println("Enter the side lengths of a triangle, separated by a space (i.e. 1 2 3), or enter q to quit:");
+		
+		input = scan.nextLine();
+		
 		try {
-			input = scan.nextLine();
-			if (input.equals("q")) {
+			if (input.startsWith("q")) {
 				toContinue = "n";
 			} else {
-				squareList.add(new Square(Integer.parseInt(input)));
+				sideLengths = input.split(" ");
+				triangleList.add(new Triangle(Integer.parseInt(sideLengths[0]), Integer.parseInt(sideLengths[1]), Integer.parseInt(sideLengths[2])));
 			}
 		} catch (NumberFormatException e) {
-			System.out.println("Please enter a whole number for side lengths for 'q' to quit.\n");
+			System.out.println("Please enter 3 whole numbers separated by a space, or enter q to quit.\n");
 		}
 		}
 		
-		for (Square sq : squareList) {
-			squareArea += sq.calculateArea();
-			squarePerimeter += sq.calculatePerimeter();
-			if (sq.getSideLength() > largestSide) {
-				largestSide = sq.getSideLength();
-			}
-			if (sq.getSideLength() < smallestSide) {
-				smallestSide = sq.getSideLength();
-			}
+		for (Triangle t : triangleList) {
+			totalTriangleArea += t.calculateArea();
+			totalTrianglePerimeter += t.calculatePerimeter();
 		}
 		
-		System.out.println("You have created " + squareList.size() + " square(s).");
-		System.out.println("Largest: " + largestSide);
-		System.out.println("Smallest: " + smallestSide);
-		System.out.println("Average area: " + String.format("%.2f", squareArea / squareList.size()));
-		System.out.println("Average perimeter: " + String.format("%.2f", squarePerimeter / squareList.size()));
+		System.out.println("You have created " + triangleList.size() + " triangle(s).");
+		System.out.println("Average area: " + String.format("%.2f", totalTriangleArea / triangleList.size()));
+		System.out.println("Average perimeter: " + String.format("%.2f", totalTrianglePerimeter / triangleList.size()));
 		
 		scan.close();
 	}
