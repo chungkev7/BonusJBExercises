@@ -5,6 +5,7 @@
 package co.grandcircus;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class BonusExercises {
@@ -710,39 +711,69 @@ public class BonusExercises {
 
 		// Exercise 50
 		// Create a list of triangles, displays statistics for the list
-		ArrayList<Triangle> triangleList = new ArrayList<>();
-		String toContinue = "";
-		String input = "";
-		String[] sideLengths = new String[3];
-		double totalTriangleArea = 0;
-		double totalTrianglePerimeter = 0;
-		
-		while (!toContinue.equals("n")) {
-		System.out.println("Enter the side lengths of a triangle, separated by a space (i.e. 1 2 3), or enter q to quit:");
-		
-		input = scan.nextLine();
-		
-		try {
-			if (input.startsWith("q")) {
-				toContinue = "n";
-			} else {
-				sideLengths = input.split(" ");
-				triangleList.add(new Triangle(Integer.parseInt(sideLengths[0]), Integer.parseInt(sideLengths[1]), Integer.parseInt(sideLengths[2])));
+//		ArrayList<Triangle> triangleList = new ArrayList<>();
+//		String toContinue = "";
+//		String input = "";
+//		String[] sideLengths = new String[3];
+//		double totalTriangleArea = 0;
+//		double totalTrianglePerimeter = 0;
+//		
+//		while (!toContinue.equals("n")) {
+//		System.out.println("Enter the side lengths of a triangle, separated by a space (i.e. 1 2 3), or enter q to quit:");
+//		
+//		input = scan.nextLine();
+//		
+//		try {
+//			if (input.startsWith("q")) {
+//				toContinue = "n";
+//			} else {
+//				sideLengths = input.split(" ");
+//				triangleList.add(new Triangle(Integer.parseInt(sideLengths[0]), Integer.parseInt(sideLengths[1]), Integer.parseInt(sideLengths[2])));
+//			}
+//		} catch (NumberFormatException e) {
+//			System.out.println("Please enter 3 whole numbers separated by a space, or enter q to quit.\n");
+//		}
+//		}
+//		
+//		for (Triangle t : triangleList) {
+//			totalTriangleArea += t.calculateArea();
+//			totalTrianglePerimeter += t.calculatePerimeter();
+//		}
+//		
+//		System.out.println("You have created " + triangleList.size() + " triangle(s).");
+//		System.out.println("Average area: " + String.format("%.2f", totalTriangleArea / triangleList.size()));
+//		System.out.println("Average perimeter: " + String.format("%.2f", totalTrianglePerimeter / triangleList.size()));
+
+		// Exercise 51
+		// Map created with English, Spanish pairing
+		HashMap<String, String> map = new HashMap<>();
+		map.put("hello", "hola");
+		map.put("food", "comida");
+		map.put("world", "mundo");
+		map.put("computer", "computadora");
+		map.put("exercise", "ejercicio");
+		map.put("party", "fiesta");
+
+		System.out.println("Enter a word in English:");
+		String input = scan.nextLine();
+		boolean inEnglish = true;
+
+		for (String value : map.values()) {
+			if (value.equalsIgnoreCase(input)) {
+				System.out.println("The word is already in Spanish.");
+				inEnglish = false;
+				break;
 			}
-		} catch (NumberFormatException e) {
-			System.out.println("Please enter 3 whole numbers separated by a space, or enter q to quit.\n");
 		}
+
+		if (inEnglish) {
+			if (map.get(input.toLowerCase()) == null) {
+				System.out.println(input + " cannot be translated from our current dictionary.");
+			} else {
+				System.out.println(input + " in Spanish is " + map.get(input.toLowerCase()) + ".");
+			}
 		}
-		
-		for (Triangle t : triangleList) {
-			totalTriangleArea += t.calculateArea();
-			totalTrianglePerimeter += t.calculatePerimeter();
-		}
-		
-		System.out.println("You have created " + triangleList.size() + " triangle(s).");
-		System.out.println("Average area: " + String.format("%.2f", totalTriangleArea / triangleList.size()));
-		System.out.println("Average perimeter: " + String.format("%.2f", totalTrianglePerimeter / triangleList.size()));
-		
+
 		scan.close();
 	}
 
